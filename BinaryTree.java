@@ -20,23 +20,23 @@ public class BinaryTree{
 		}
 		
 		else{
-			if (key < a.getKey()){
-				node.left=insert(node.left, key, value);
+			if (key.compareToIgnoreCase(a.getKey()) < 0){
+				a.left=insert(a.left, key, value);
 			}
 			else{
-				node.right=insert(node.right,key,value);
+				a.right=insert(a.right,key,value);
 			}
 		}
-		return node;
+		return a;
 	}
 	
 	public String translate(Association a, String word){
 		String aKey;
-		String result;
+		String result="";
 		boolean found = false;
 		
 		while ((a!=null)&&!found){
-			int aKey = a.getKey();
+			aKey = a.getKey();
 			if (word.compareToIgnoreCase(aKey) < 0){
 				a = a.getLeft();
 			}
@@ -53,10 +53,12 @@ public class BinaryTree{
 		if(!found){
 			result ="*"+word+"*";
 		}
-		result = result += " ";
+		result = result + " ";
 		return result;
 	}
 	
 	public void inOrder(){
-		
+	}
+}
+
 			

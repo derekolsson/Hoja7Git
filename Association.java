@@ -1,5 +1,5 @@
 public class Association{
-	private Association left,right;
+	protected Association left,right;
 	private String key;
 	private String value;
 	
@@ -10,7 +10,7 @@ public class Association{
 		value=null;
 	}
 	
-	public Association(Key k, Value v){
+	public Association(String k, String v){
 		left = null;
 		right = null;
 		key = k;
@@ -49,5 +49,5 @@ public class Association{
 		return value;
 	}
 	
-	
+}
 	
