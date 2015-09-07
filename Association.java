@@ -49,5 +49,10 @@ public class Association{
 		return value;
 	}
 	
+	public String toString(){
+		String s = "<"+key+", "+value+">";
+		return s;
+	}
+	
 }
 	

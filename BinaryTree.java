@@ -58,6 +58,15 @@ public class BinaryTree{
 	}
 	
 	public void inOrder(){
+		inOrder(root);
+	}
+	
+	public void inOrder(Association r){
+		if (r != null){
+			inOrder(r.getLeft());
+			System.out.println(r.toString()+" ");
+			inOrder(r.getRight());
+		}
 	}
 }
 
