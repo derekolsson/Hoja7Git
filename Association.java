@@ -2,7 +2,11 @@ public class Association{
 	protected Association left,right;
 	private String key;
 	private String value;
-	
+	// Constructor 
+	// left: is the left branch
+	// right is the right branch
+	// key: is the english word
+	// value: is the spanish word
 	public Association(){
 		left=null;
 		right=null;
@@ -14,7 +18,7 @@ public class Association{
 		left = null;
 		right = null;
 		key = k;
-		value = value;
+		value = v;
 	}
 	
 	public void setLeft(Association n){
